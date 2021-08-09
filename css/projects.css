@@ -1,0 +1,116 @@
+#projects {
+ 
+    padding-top: 5%;
+    padding-right: 25%;
+  }
+
+.projects__grid {
+    display: grid;
+    padding-left: 20px;
+    width: 80%;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+@media (max-width: 1080px) {
+    .projects__grid {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+.projects__card {
+    position: relative;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    position: relative;
+    height: 100%;
+    padding: 2rem 1.75rem;
+    background-color: var(--navy-shadow);
+    border-radius: 16px;
+   
+}
+
+.projects__card:hover {
+    transform: translateY(-7px);
+    background-color: var(--light-navy);
+  }
+
+.card__header {
+    margin-top: -20px;
+    display: flex;
+    padding: 1.25em 0 !important;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: none !important;
+    
+  }
+.card__img--position{
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+  padding-right: 5px;
+  margin-top: 10px;
+
+}
+.folder__icon {
+    color: var(--green-bright);
+    
+}
+
+.github__icon {
+  
+  margin-top: 6px;
+}
+
+.card__title{
+  align-items: center;
+}
+
+.card__desc{
+  margin-top: 10px;
+  color: var(--slate);
+}
+
+.card__tech{
+  font-size: 12px;
+  margin-top: 20px;
+  color: var(--slate);
+}
+
+.button{
+ 
+  width: 2rem;
+  flex-direction: wrap;
+  height: auto;
+  margin-left: 16.2%;
+  margin-top: 15px;
+  padding: 0;
+  transition-delay: 4s;
+  transform-origin: right;
+  transform: scaleX(1);
+;
+
+ 
+ 
+}
+
+#icon{
+ 
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  #projects {
+    height: unset;
+    padding-top: 30%;
+    padding-left: unset;
+    padding-right: unset;
+  }
+}
